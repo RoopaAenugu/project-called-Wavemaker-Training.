@@ -15,7 +15,7 @@ form{
 }
 .main-container{
   
-
+   padding:10px 0px 10px 10px;
     background-color:white;
 }
 .namecolor{
@@ -50,6 +50,7 @@ form{
     margin:10px;
 }
 .Email,.textbio{
+
     width:98%;
     padding:5px;
     font-size:15px;
@@ -67,6 +68,8 @@ form{
     color:white;
     background-color: rgb(12, 158, 129);
     padding:10px;
+    margin-top:10px;
+    text-align: center;
     margin-right:20px;
     border-radius: 10px;
     width:100px;
@@ -78,11 +81,20 @@ form{
       background-color: lightblue;
     }
     .name-field,.password-field,.source-field,.range-field,.upload-field,.age-field,.gender-field,.checkbox-field{
-        width:98%;
+        width:95%;
         flex-direction:column;
+        margin:10px;
+    }
+    .Email,.textbio{
+        width:95%;
+
     }
 .name-container,.password-container,.genderhobbies-container,.sourceincome-container,.uploadage-container{
     flex-direction: column;
 
+  }
+  .buttondiv{
+  display:flex;
+  justify-content:center;
   }
 }
