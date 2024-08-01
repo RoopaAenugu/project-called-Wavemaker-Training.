@@ -2,81 +2,119 @@
 <html>
 <head>
 <title>Time Table</title>
-<link rel="stylesheet" href="./styles/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./styles/style2.css">
 </head>
 <body>
+    <div class="first-container">
+    <h1>Create Account</h1>
+    <form>
+        <div class="main-container">
+            <div class="name-container">
+                <div class="name-field">
+                    <label  for="fname"  class="namecolor" >First name*</label>
+                    <input type="text" class="inputbox" id="fname" placeholder="enter your first name">
 
-<table>
+                </div>
+            
+                <div class="name-field">
+                    <label class="namecolor" for="lname">Last name*</label>
+                    <input type="text" id="lname" class="inputbox" placeholder="enter your last name">
 
-    <h1  >TIME TABLE</h1>
+                </div>
+            </div>  
+            <div class="email-container">
+                <label for="email"  class="namecolor" >Email*</label><br>
+                <input type="email" id="email" class="Email" placeholder="enter your email">
+            </div> 
+    
+        <div class="password-container">
+            <div class="password-field">
+                <label for="password"  class="namecolor" >Password*</label>
+                <input type="password" id="password" class="inputbox" placeholder="enter your password">
+            </div>
+            <div class="password-field">
+
+                <label for="confirmpassword"  class="namecolor"  > Confirm Password*</label>
+                <input type="password" id="confirmpassword" class="inputbox" placeholder="enter your password again">
+
+            </div>
+        </div>
+        <div class="genderhobbies-container">
+            <div class="gender-field">
+                <label  class="namecolor" >Gender</label><br>
+
+                <input type="radio" id="female" name="gender">
+                <label for="female">Female</label>
+                <input type="radio" id="male" name="gender">
+                <label for="male">Male</label>
+            
+            </div>
+            <div class="checkbox-field">
+
+                <label  class="namecolor" >Hobbies</label><br>
+                <input type="checkbox" id="music" name="hobbies">
+                <label for="music">music</label>
+                <input type="checkbox" id="sports" name="hobbies">
+                <label for="sports">Sports</label>
+                <input type="checkbox" id="travel" name="hobbies">
+                <label for="travel">Travel</label>
+                <input type="checkbox" id="movies" name="hobbies" >
+                <label for="movies">Movies</label>
+
+            </div>
+        </div><br>
+        <div class="sourceincome-container">
+            <div class="source-field">
+                <label for="source"  class="namecolor" >Source of Income</label>
+            <select id="source" class="inputbox">
+                    <option value="Employed">Employed</option>
+                    <option value="intern">Intern</option>
+            </select>
+            
+            </div>
+            <div class="range-field">
+                <label for="source"  class="namecolor" >Income</label>
+                    <div class="slidecontainer">
+                        <input type="range" class="moneyrange">
+                        <span class="moneybutton">20k</span>
+                    </div>
+                
+
+            </div>
+        </div>
+        <div class="uploadage-container">
+            <div class="upload-field">
+                <label for="age"  class="namecolor" >Upload Profile picture</label>
+                <input type="file" class="inputbox">
+                
+            
+            </div>
+            <div class="age-field">
+                <label for="age"  class="namecolor" >Age</label>
+                <input type="text" id="age" class="inputbox">
+                
+
+            </div>
+        </div>
+        <br>
+        <div class="textarea-container">
+            <label for="bio"  class="namecolor">Bio</label><br>
+            <textarea class="textbio" id="bio" rows="4" cols="40"></textarea><br>
+        </div>
+        
+
+        
+   </div>
+    <button  class="button" type="submit">create</button>
    
-        <thead>
-            <tr>
-                <th>Day/Period</th>
-                <th>I<br>9:30-10:20</th>
-                <th>II<br>10:20-11:10</th>
-                <th>III<br>11:10-12:00</th>
-                <th>I<br>12:00-12:40</th>
-                <th>IV<br>12:40-1:30</th>
-                <th>VI<br>1:30-2:20</th>
-                <th>VI<br>2:20-3:10</th>
-                <th>VII<br>3:10-4:00</th>
-            </tr>
-       </thead>
-       
-    <tbody>
-    <tr>
-        <td  class="bgcolor textbold">Monday</td>
-        <td class="bgcolor">Eng</td>
-        <td class="bgcolor">Mat</td>
-        <td class="bgcolor">Che</td>
-        <td rowspan="6"  class="textbold">LUNCH</td>
-        <td colspan="3">LAB</td>
-        <td class="bgcolor">Phy</td>
-    </tr>
-    <tr>
-        <td class="textbold  bgcolor">Tuesday</td>
-        <td colspan="3">LAB</td>
-        <td class="bgcolor">Eng</td>
-        <td class="bgcolor">Che</td>
-        <td class="bgcolor">Mat</td>
-        <td>SPORTS</td>
-    </tr>
-    <tr>
-        <td  class="textbold bgcolor ">Wednesday</td>
-        <td class="bgcolor">Mat</td>
-        <td class="bgcolor">Phy</td>
-        <td class="bgcolor">Eng</td>
-        <td class="bgcolor">Che</td>
-        <td colspan="3" class="bgcolor">LIBRARY</td>
-    </tr>
-    <tr>
-        <td  class="textbold bgcolor ">Thursday</td>
-        <td class="bgcolor">Phy</td>
-        <td class="bgcolor">Eng</td>
-        <td class="bgcolor">Che</td>
-        <td colspan="3" >LAB</td>
-        <td class="bgcolor">Mat</td>
-    </tr>
-    <tr>
-        <td  class="textbold bgcolor">Friday</td>
-        <td colspan="3">LAB</td>
-        <td class="bgcolor">Mat</td>
-        <td class="bgcolor">Che</td>
-        <td class="bgcolor">Eng</td>
-        <td class="bgcolor">Phy</td>
-    </tr>
-    <tr>
-        <td  class="textbold bgcolor ">Saturday</td>
-        <td class="bgcolor">Eng</td>
-        <td class="bgcolor">Che</td>
-        <td class="bgcolor">Mat</td>
-        <td colspan="3" class="bgcolor">SEMINAR</td>
-        <td>SPORTS</td>
-    </tr>
-</tbody>
-
-</table>
-
+   
+   
+    
+  
+  
+</form>
+</div>
 </body>
-</html>
+
+</html> 
