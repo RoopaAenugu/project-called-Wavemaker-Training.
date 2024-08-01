@@ -80,6 +80,10 @@ form{
     body {
       background-color: lightblue;
     }
+    .first-container{
+    padding-bottom:20px;
+
+  }
     .name-field,.password-field,.source-field,.range-field,.upload-field,.age-field,.gender-field,.checkbox-field{
         width:95%;
         flex-direction:column;
