@@ -17,5 +17,4 @@ Assignment-3
 Calculator in large screen
 
 <img width="364" alt="assignment3-1" src="https://github.com/user-attachments/assets/25dcced7-f977-4d69-b767-970fcc76dd16">
-
 <img width="362" alt="assignment3-2" src="https://github.com/user-attachments/assets/e41bc15b-57f0-4004-b733-df4ab03d7bd7">
