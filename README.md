@@ -16,4 +16,6 @@ Form in Medium Screen.
 Assignment-3
 Calculator in large screen
 
-<img width="441" alt="Assignment-3(BS)" src="https://github.com/user-attachments/assets/c43a9597-39c5-4d94-80e4-007055abcdb2">
+<img width="364" alt="assignment3-1" src="https://github.com/user-attachments/assets/25dcced7-f977-4d69-b767-970fcc76dd16">
+
+<img width="362" alt="assignment3-2" src="https://github.com/user-attachments/assets/e41bc15b-57f0-4004-b733-df4ab03d7bd7">
