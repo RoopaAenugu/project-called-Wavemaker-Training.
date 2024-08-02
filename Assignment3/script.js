@@ -45,7 +45,6 @@ function squareRoot() {
 
 function append(buttonValue) {
     if (!isNaN(buttonValue) || buttonValue === '.') {
-        // If the button value is a number or decimal point, append it to the current value
         current += buttonValue;
     } else {
         // Handle operators
@@ -54,7 +53,6 @@ function append(buttonValue) {
             case '-':
             case '*':
             case '/':
-                // If current ends with an operator, replace it
                 if (['+', '-', '*', '/'].includes(current.slice(-1))) {
                     current = current.slice(0, -1);
                 }
