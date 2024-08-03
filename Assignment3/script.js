@@ -23,9 +23,6 @@ function memorySub() {
     memory = memory - Number(d.value);
     d.value = memory;
 }
-function backspace(){
-   
-}
 function clearEntry(){
     d.value=d.value.slice(0,-1);
     current=d.value;
