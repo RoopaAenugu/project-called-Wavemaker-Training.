@@ -50,7 +50,6 @@ function append(buttonValue) {
     if (!isNaN(buttonValue) || buttonValue === '.') {
         current += buttonValue;
     } else {
-        // Handle operators
         switch (buttonValue) {
             case '+':
             case '-':
@@ -73,7 +72,7 @@ function append(buttonValue) {
              case '1/x':
                  if(d.value!=''){
                     k=Number(current);
-                    console.log(k);
+                   // console.log(k);
                     current=(1/k).toString();
                    }
                   break;
@@ -84,7 +83,7 @@ function append(buttonValue) {
 }
 
 function calculateResult() {
-    console.log(current);
+    //console.log(current);
     try {
         // Evaluate the current expression
         current = eval(current).toString();
