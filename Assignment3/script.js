@@ -71,10 +71,11 @@ function append(buttonValue) {
                     break;
                
              case '1/x':
-                   
+                 if(d.value!=''){
                     k=Number(current);
-                   console.log(k);
-                   current=(1/k).toString();
+                    console.log(k);
+                    current=(1/k).toString();
+                   }
                   break;
         }
     }
