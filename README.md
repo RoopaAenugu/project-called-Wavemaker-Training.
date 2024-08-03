@@ -18,3 +18,12 @@ Calculator in large screen
 
 <img width="364" alt="assignment3-1" src="https://github.com/user-attachments/assets/25dcced7-f977-4d69-b767-970fcc76dd16">
 <img width="362" alt="assignment3-2" src="https://github.com/user-attachments/assets/e41bc15b-57f0-4004-b733-df4ab03d7bd7">
+
+Assignment-4
+Profile in large screen
+
+<img width="407" alt="assignment4-bs" src="https://github.com/user-attachments/assets/66fa5e6f-1f77-4f87-8947-e13a95ce45bd">
+
+profile in small screen
+
+<img width="236" alt="assignment4-sm" src="https://github.com/user-attachments/assets/01d8cfde-5769-43f0-a80c-7ec6ec44882b">
