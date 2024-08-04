@@ -1,0 +1,64 @@
+.image-size {
+    width: 40px;
+    height:38px;
+}
+.image-size2{
+    width:80px;
+    height:70px;
+    padding:7px;
+}
+.profile-image{
+  height:150px;
+  width:160px;
+   
+}
+#profilesection{
+    background-color:rgb(236, 233, 233);;
+}
+#educationSection{
+    background-color:rgb(139, 139, 209);;
+}
+#skillsection{
+   
+    background-color:rgb(199, 240, 217);
+}
+#contactsection{
+    background-color:rgb(244, 230, 206);;
+}
+.bg{
+    width:750px;
+    margin:0 auto;
+    border:3px solid rgb(206, 195, 195);
+   border-radius:13px;
+}
+p{
+    font-size:16px;;
+}
+h5{
+    color:rgb(43, 39, 39);
+}
+.education-container,.skill-container{
+    border-radius: 10px;
+        border-color: #e5eaf4;
+        border-style: solid;
+        border-width: 2px;
+        padding:1px;
+       background-color: white;
+    
+}
+.follow-us-icon-container {
+   padding:20px;
+   margin:15px;
+    background-color: #faf7e8;
+    width:80px;
+    height: 75px;
+   
+}
+.location-link {
+    color: inherit; /* Inherit color from the parent element */
+    text-decoration: none; /* Remove underline */
+}
+
+.location-link:hover {
+    text-decoration: underline; /* Optional: underline on hover */
+}
