@@ -22,11 +22,7 @@ Calculator in large screen
 
 Assignment-4
 Profile in large screen
-
-<img width="402" alt="assignment4-bigscrren" src="https://github.com/user-attachments/assets/d3ea939a-4020-4182-8649-03afcf24e6c5">
-
+<img width="394" alt="assignment4-big screen" src="https://github.com/user-attachments/assets/36437128-833a-467b-802e-158cecf0d122">
 
 profile in small screen
-
-
-<img width="230" alt="assignment4-smallscreen" src="https://github.com/user-attachments/assets/a51484f1-5263-4a83-b73f-7417b71eba54">
+<img width="220" alt="assignment4-smallscreen" src="https://github.com/user-attachments/assets/cc8baf85-24fa-4a28-a1a4-014cb9d59df8">
