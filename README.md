@@ -23,6 +23,5 @@ Calculator in large screen
 Assignment-4
 Profile in large screen
 <img width="394" alt="assignment4-big screen" src="https://github.com/user-attachments/assets/36437128-833a-467b-802e-158cecf0d122">
-
 profile in small screen
 <img width="220" alt="assignment4-smallscreen" src="https://github.com/user-attachments/assets/cc8baf85-24fa-4a28-a1a4-014cb9d59df8">
