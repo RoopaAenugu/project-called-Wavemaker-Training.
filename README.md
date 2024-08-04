@@ -25,6 +25,8 @@ Profile in large screen
 
 
 <img width="394" alt="assignment4-big screen" src="https://github.com/user-attachments/assets/36437128-833a-467b-802e-158cecf0d122">
+
+
 profile in small screen
 
 
