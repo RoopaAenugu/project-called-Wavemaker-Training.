@@ -31,3 +31,8 @@ profile in small screen
 
 
 <img width="220" alt="assignment4-smallscreen" src="https://github.com/user-attachments/assets/cc8baf85-24fa-4a28-a1a4-014cb9d59df8">
+
+
+Form By uing POST method
+
+<img width="488" alt="Assignment2-server" src="https://github.com/user-attachments/assets/b25887a4-8b8b-485d-a1b1-9c13b6f5a0ec">
