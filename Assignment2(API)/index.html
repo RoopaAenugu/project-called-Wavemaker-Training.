@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Account</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style2.css">
+</head>
+<body>
+    <div class="first-container">
+        <h1>Create Account</h1>
+        <form id="createAccountForm">
+            <div class="form-container">
+                <div class="name-container">
+                    <div class="name-field">
+                        <label for="fname" class="namecolor">First name*</label>
+                        <input type="text" name="firstname" class="inputbox" id="fname" placeholder="enter your first name" required="true">
+                    </div>
+                    <div class="name-field">
+                        <label class="namecolor" for="lname">Last name*</label>
+                        <input type="text" id="lname" name="lastname" class="inputbox" placeholder="enter your last name" required="true">
+                    </div>
+                </div>
+                <div class="email-container">
+                    <label for="email" class="namecolor">Email*</label><br>
+                    <input type="email" id="email" name="email" class="Email" placeholder="enter your email" required="true">
+                </div>
+                <div class="password-container">
+                    <div class="password-field">
+                        <label for="password" class="namecolor">Password*</label>
+                        <input type="password" id="password" name="password" class="inputbox" placeholder="enter your password" required="true">
+                    </div>
+                    <div class="password-field">
+                        <label for="confirmpassword" class="namecolor">Confirm Password*</label>
+                        <input type="password" id="confirmpassword" name="confirmpassword" class="inputbox" placeholder="enter your password again" required="true">
+                    </div>
+                </div>
+                <div class="genderhobbies-container">
+                    <div class="gender-field">
+                        <label class="namecolor">Gender</label><br>
+                        <input type="radio" id="female" name="gender" value="female"  required>
+                        <label for="female">Female</label>
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="checkbox-field">
+                        <label class="namecolor">Hobbies</label><br>
+                        <input type="checkbox" id="music" name="hobbies" value="music" >
+                        <label for="music">Music</label>
+                        <input type="checkbox" id="sports" name="hobbies" value="sports" >
+                        <label for="sports">Sports</label>
+                        <input type="checkbox" id="travel" name="hobbies" value="travel" >
+                        <label for="travel">Travel</label>
+                        <input type="checkbox" id="movies" name="hobbies" value="movies">
+                        <label for="movies">Movies</label>
+                    </div>
+                </div>
+                <div class="sourceincome-container">
+                    <div class="source-field">
+                        <label for="source" class="namecolor">Source of Income</label>
+                        <select id="source" class="inputbox" required="true">
+                            <option value="Employed">Employed</option>
+                            <option value="Intern">Intern</option>
+                        </select>
+                    </div>
+                    <div class="range-field">
+                        <label for="income" class="namecolor">Income</label>
+                        <div class="slidecontainer">
+                            <input type="range" class="moneyrange" id="income" min="0" max="100000" step="1000">
+                            <span class="moneybutton" id="incomeValue">20k</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="uploadage-container">
+                    <div class="upload-field">
+                        <label for="profilepic" class="namecolor">Upload Profile picture</label>
+                        <input type="file" class="inputbox" id="profilepic">
+                    </div>
+                    <div class="age-field">
+                        <label for="age" class="namecolor">Age</label>
+                        <input type="text" id="age" name="age" class="inputbox" required="true">
+                    </div>
+                </div>
+                <div class="textarea-container">
+                    <label for="bio" class="namecolor">Bio</label><br>
+                    <textarea class="textbio" id="bio" rows="4" cols="40" required="true"></textarea><br>
+                </div>
+            </div>
+            <div class="buttondiv">
+                <input type="submit" value="Create" class="button">
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
