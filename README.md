@@ -35,11 +35,11 @@ profile in small screen
 
 Assignment-2 Form By uing POST method
 
-<img width="488" alt="Assignment2-server" src="https://github.com/user-attachments/assets/b25887a4-8b8b-485d-a1b1-9c13b6f5a0ec">
 
 
 
 
+<img width="458" alt="Assignment2-server" src="https://github.com/user-attachments/assets/74de51fe-3bfa-4da9-98ec-6a2160bcea15">
 
 
 
