@@ -44,4 +44,5 @@ Assignment-2 Form By uing POST method
 
 
 
-<img width="377" alt="ServerStorage" src="https://github.com/user-attachments/assets/ee84a01b-e4d1-46f3-94cf-29604c2227d1">
+ <img width="391" alt="Assignment2-serverstorage" src="https://github.com/user-attachments/assets/c2639106-88ed-4f84-802c-5acb4e4942c4">
+
