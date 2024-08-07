@@ -270,5 +270,4 @@ function updateListOrder() {
     });
     todoList = updatedList;
     count = updatedList.length;
-    // Ensure the updated list is saved to local storage
 }
