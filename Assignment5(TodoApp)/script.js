@@ -152,8 +152,7 @@ function addSubtask(listId, subtaskName, subtaskPriority, subtaskDate, subtaskTi
             priority: subtaskPriority,
             subuniqueno: Date.now(),
             date: subtaskDate,
-            time: subtaskTime,
-            isChecked: false
+            time: subtaskTime
         };
         todoItem.subtasks.push(newSubtask);
         subtasktemp.push(newSubtask);//temporary subtask array 
@@ -390,8 +389,8 @@ function addto() {
         date: datevalue,
         time: timevalue,
         subtasks: [],
-        uniqueno: Date.now(),
-        isChecked: false
+        uniqueno: Date.now()
+       
     };
     todoList.push(newtodo);
     sortTodoList(sourcevalue);
