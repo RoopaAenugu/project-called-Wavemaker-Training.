@@ -48,10 +48,13 @@ Assignment-2 Form By uing POST method
 
  Assignment-5 Todo App in light-mode
  
-<img width="957" alt="TodoApp-light-mode" src="https://github.com/user-attachments/assets/9f0732af-7d28-454c-8beb-58313f1d5195">
+ 
+
+<img width="424" alt="TodoApp-lightmode" src="https://github.com/user-attachments/assets/0821eb3d-6ccd-430c-aa5c-9d50c6a9f5a7">
 
 
 Todo App in dark-mode
  
 
-<img width="956" alt="TodoApp-dark-mode" src="https://github.com/user-attachments/assets/a3bd3d84-a08e-45fb-844e-c91eae26913d">
+
+<img width="368" alt="TodoApp-darkmode" src="https://github.com/user-attachments/assets/40d58775-6d77-480a-8d85-1bb324c138e4">
