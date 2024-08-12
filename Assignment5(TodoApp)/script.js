@@ -139,9 +139,7 @@ function addSubtask(listId, subtaskName, subtaskPriority, subtaskDate, subtaskTi
     editsub.classList.add("edit-icon", "fa", "fa-edit");
     subtaskItem.appendChild(deletesub);
     subtaskItem.appendChild(editsub);
-    subtaskcontainer.appendChild(subtaskItem);
       let subtasktemp=[];
-    subtaskcontainer.appendChild(subtaskItem);
     let todoItem = todoList.find(todo => `list${todo.uniqueno}` === listId);
     if (todoItem) {
         if (!todoItem.subtasks) {
@@ -154,11 +152,25 @@ function addSubtask(listId, subtaskName, subtaskPriority, subtaskDate, subtaskTi
             date: subtaskDate,
             time: subtaskTime
         };
+        let isDuplicate = todoItem.subtasks.some(subtask =>
+            subtask.text.toLowerCase() === newSubtask.text.toLowerCase()
+        );
+        if(isDuplicate){
+            alert("subtask is already present");
+            return;
+        }
+        let subtaskDateTime = new Date(`${subtaskDate}T${subtaskTime}`);
+       let currentDateTime = new Date();
+    if (subtaskDateTime < currentDateTime) {
+         alert("The subtask time is in the past");
+         return;
+    }
         todoItem.subtasks.push(newSubtask);
-        subtasktemp.push(newSubtask);//temporary subtask array 
+        subtasktemp.push(newSubtask);
         let subtaskId="subtask"+subtasktemp[0].subuniqueno;
         subtaskItem.id=subtaskId;
-        console.log(subtaskItem);
+        subtaskcontainer.appendChild(subtaskItem);
+       
         deletesub.onclick = function () {
             deleteSubtask(listId,subtaskId);
         }
@@ -226,6 +238,12 @@ subeditForm.onsubmit = function(event) {
     let newTime = document.getElementById("subeditTime").value;
     let subItem = subEditArray;
    if (subItem) {
+        let taskDateTime = new Date(`${newDate}T${newTime}`);
+        let currentDateTime = new Date();
+        if (taskDateTime < currentDateTime) {
+            alert("The sub task time is in the past");
+            return;
+        }
         subItem.text = newText;
         subItem.priority = newPriority;
         subItem.date = newDate;
@@ -237,8 +255,7 @@ subeditForm.onsubmit = function(event) {
             subListItem.querySelector('.priority-label').textContent = newPriority;
             subListItem.querySelector('.date-time-label').textContent = `${newDate} ${newTime}`;
         }
-        saveToLocalStorage(); 
-        console.log(todoItem);   
+        saveToLocalStorage();  
       
     }    
 }
@@ -274,6 +291,12 @@ editForm.onsubmit = function(event) {
     let newTime = document.getElementById("editTime").value;
     let todoItem = todoList.find(todo => todo.uniqueno === currentEditId);
     if (todoItem) {
+        let taskDateTime = new Date(`${newDate}T${newTime}`);
+        let currentDateTime = new Date();
+        if (taskDateTime < currentDateTime) {
+            alert("The task time is in the past");
+            return;
+        }
         todoItem.text = newText;
         todoItem.priority = newPriority;
         todoItem.date = newDate;
@@ -379,8 +402,8 @@ function addto() {
     let timeadd = document.getElementById("timeInput");
     let timevalue = timeadd.value;
     let sourcevalue=sourceOrder.value;
-    if (elementvalue === "") {
-        alert("Enter valid input");
+    if (elementvalue === "" ||priorityvalue===""||datevalue===""||timevalue==="") {
+        alert("Please fill out all fields.");
         return;
     }
     let newtodo = {
@@ -392,6 +415,19 @@ function addto() {
         uniqueno: Date.now()
        
     };
+    let isDuplicate = todoList.some(todo => 
+        todo.text.toLowerCase() === newtodo.text.toLowerCase()
+    );
+    if(isDuplicate){
+        alert("task is already present");
+        return;
+    }
+    let taskDateTime = new Date(`${datevalue}T${timevalue}`);
+    let currentDateTime = new Date();
+    if (taskDateTime < currentDateTime) {
+    alert("The task time is in the past");
+    return;
+    }
     todoList.push(newtodo);
     sortTodoList(sourcevalue);
     todoitemcontainer.innerHTML = "";
@@ -551,7 +587,6 @@ function checkUpcomingDueDates() {
         }
         let timeDifference = dueDateTime - now;
         let timeDifferenceInSeconds = timeDifference / 1000; 
-        console.log(`Task: ${task.text}, Time Difference: ${timeDifferenceInSeconds} seconds`);
         if (timeDifferenceInSeconds > 0 && timeDifferenceInSeconds <= 120 && !notificationSentFor.has(task.uniqueno)) {
             console.log(`Notification should be sent for task: ${task.text}`);
             
