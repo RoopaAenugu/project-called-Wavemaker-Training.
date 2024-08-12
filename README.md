@@ -48,7 +48,7 @@ Assignment-2 Form By uing POST method
 
  Assignment-5 Todo App in light-mode
 
- Todo App link:https://66b9d262f0653b4ce7f2c502--clever-kelpie-4edec9.netlify.app/
+ Todo App Netlify link:https://66b9d262f0653b4ce7f2c502--clever-kelpie-4edec9.netlify.app/
  
  
 
