@@ -1,5 +1,30 @@
 Todo App Netlify  link:
 https://66b9d262f0653b4ce7f2c502--clever-kelpie-4edec9.netlify.app/
 
+Successfully Updated features:
+Adding TODO         
+Deleting TODO       
+View TODO
+Editing TODO
+Organising - Priority levels Low, Medium, High 
+Dark mode: Implement a dark mode toggle using theming and CSS variables.
+Search functionality: Implement a search bar to filter tasks based on keywords.
+Duration of the TODO - Calendar widget
+Notifications: Add browser notifications for upcoming due dates using Browsers Notifications API.
+Export/Import: Allow users to export their tasks as JSON or CSV and import them back, introducing file handling in JavaScript.
+Auto sort based on priority, whenever browser refreshes. This is the default state
+Dropdown: 
+Sort based on Priority-If priority is same it sort based on date.
+Sort based on Due date
+Subtasks: Allow users to create subtasks within main tasks.
+Extend search functionality to subtasks as well. My search query should fetch results matching subtasks as well now.If matching subtask is found border color of subtask changed to red color.
+Delete subtask
+Edit subtask.
+Notifications for subtaks added 
+Responsiveness.
+js validations: validations added for duplicate tasks and subtasks entries 
+and also past time and date entries.
+Drag and Drop for main tasks and within subtasks are addede.
+
 My pending task is:
  I should not be able to drag and drop tasks subtasks across the list.
